@@ -2,7 +2,7 @@
 /*7) Напишите функцию, которая реализует алгоритм 'решето Эратосфена' для поиска простых чисел в заданном промежутке.
 Алгоритм найдите самостоятельно в поисковых системах.*/
 
-function SieveOfEratosthenes($num)
+function sieveOfEratosthenes($num)
 {
     //заполняем "решето" единицами, если бы все числа там были простыми
     $array = array_fill(1, $num, 1);
@@ -25,5 +25,5 @@ function SieveOfEratosthenes($num)
 $num = 100;
 
 echo '<pre>';
-print_r(SieveOfEratosthenes($num));
+print_r(sieveOfEratosthenes($num));
 echo '</pre>';
